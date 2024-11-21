@@ -1,0 +1,24 @@
+.boomerang {
+  width: 100%;
+  height: 170px;
+
+  display: flex;
+  justify-content: center;
+
+  .boomerang-center {
+    width: 80%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .cover {
+    object-fit: cover;
+    border-radius: 15px;
+  }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" dir="rtl" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فروشگاه اینترنتی دیجی کالا</title>
+    <link rel="stylesheet" href="CSS/Partials/Setings.css" />
+    <link
+      rel="shortcut icon"
+      href="Images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      *:root {
+        font-family: var(--fontFamily);
+      }
+
+      form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        margin-top: 50px;
+        input[type="text"] {
+          width: 100%;
+          height: 46px;
+          border-radius: 10px;
+          outline: none;
+          border: 1px solid crimson;
+          margin-top: 30px;
+        }
+      }
+
+      .form {
+        width: 100%;
+        height: 480px;
+
+        margin-top: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .form-center {
+          width: 400px;
+          height: 480px;
+          border: 1px solid rgba(211, 211, 211, 0.659);
+          border-radius: 10px;
+          box-sizing: border-box;
+          .main-form {
+            padding: 32px;
+
+            a {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              align-items: center;
+
+              img {
+                width: 100px;
+                height: 69px;
+              }
+            }
+
+            .text {
+              display: block;
+
+              .textandspan {
+                display: flex;
+                flex-flow: row-reverse wrap;
+                padding-top: 40px;
+                h1 {
+                  font-size: 19px;
+                }
+                span {
+                  display: inline-block;
+                  width: 3px;
+                  height: 22px;
+                  background-color: black;
+                }
+              }
+            }
+            .textandp {
+              width: fit-content;
+              display: block;
+              float: right;
+              margin-top: 30px;
+
+              p {
+                font-size: 12px;
+                text-align: right;
+                color: #3f4064;
+              }
+              .secondtext {
+                margin-top: 10px;
+              }
+            }
+            .warning {
+              display: flex;
+              justify-content: end;
+              font-size: 12px;
+              padding-top: 5px;
+              color: rgba(168, 16, 47, 0.695);
+            }
+            .button {
+              width: 334px;
+              height: 48px;
+              background-color: crimson;
+              border-radius: 10px;
+              margin-top: 32px;
+              color: whitesmoke;
+              text-decoration: none;
+            }
+            .notice {
+              display: flex;
+              flex-flow: row-reverse wrap;
+
+              margin-top: 20px;
+              p {
+                font-size: 11px;
+                color: #3f4064;
+              }
+              a {
+                text-decoration: none;
+                font-size: 11px;
+                color: #008eb2;
+              }
+            }
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <div class="form-center">
+        <div class="main-form">
+          <a href="#">
+            <img src="Images/svg/form-digikala-logo.svg" alt="" />
+          </a>
+          <div class="text">
+            <div class="textandspan">
+              <h1>&nbsp;ورود</h1>
+              <span></span>
+              <h1>ثبت‌نام&nbsp;</h1>
+            </div>
+          </div>
+          <div class="textandp">
+            <p>!سلام</p>
+            <p class="secondtext">
+              لطفا شماره موبایل یا ایمیل خود را وارد کنید
+            </p>
+          </div>
+          <form action="" method="post" enctype="multipart/form-data">
+            <input type="text" name="fullname" placeholder="" />
+          </form>
+          <p class="warning">لطفا این قسمت را خالی نگذارید</p>
+          <a class="button" href="#">ورود</a>
+          <div class="notice">
+            <p>&nbsp;ورود شما به معنای پذیرش</p>
+            <a href="#">&nbsp;شرایط دیجی‌کالا</a>
+            <p>&nbsp;و</p>
+            <a href="#">قوانین حریم‌خصوصی</a>
+            <p>است&nbsp;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+.picks-2 {
+  width: 100%;
+  height: 265px;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  .picks-2-center {
+    width: 80%;
+    height: inherit;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    .picks-2-center-item {
+      width: 45%;
+      height: inherit;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+
+      img {
+        border-radius: 15px;
+        width: 659px;
+        height: 263px;
+      }
+    }
+    .picks-2-center-item-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
