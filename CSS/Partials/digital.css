@@ -59,6 +59,10 @@
 .borderLess {
   border-right: none !important;
 }
+.noborder {
+  border-left: none !important;
+  border-right: none !important;
+}
 .borderBottom {
   border-bottom: 1px solid lightgray;
 }
