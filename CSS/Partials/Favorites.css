@@ -35,34 +35,34 @@
     .favorites-center-bottom {
       width: 100%;
       height: calc(100% - 20%);
+      display: flex;
+      flex-flow: row wrap;
+      column-gap: 5px;
 
       .swiper {
         width: 100%;
         height: 100%;
       }
 
-      
-        .swiper-slide-product {
-          padding-top: 20px;
-          width: 160px;
-          height: 160px;
-          height: inherit;
-          .favorite-image {
-            width: 109px;
-            height: 109px;
-            margin-bottom: 15px;
-            display: block;
-            margin: 10px auto;
-            object-fit: cover;
-          }
-        }
-      
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .slider-divider {
+        width: 2px;
+        height: 80%;
+        background-color: lightgrey;
+      }
 
       .swiper-slide img {
         display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        width: 110px;
+        height: 110px;
+        object-fit: contain;
       }
     }
   }

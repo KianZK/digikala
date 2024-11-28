@@ -1,0 +1,176 @@
+.custom-amazing {
+  width: 100%;
+  height: 463px;
+  box-sizing: border-box;
+
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  .custom-amazing-center {
+    width: 80%;
+    height: inherit;
+    box-sizing: border-box;
+
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    display: block;
+    .top {
+      width: 100%;
+      height: 10%;
+
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      padding-right: 12px;
+      gap: 10px;
+      .text {
+        font-size: 14px;
+        font-family: var(--fontFamily);
+      }
+    }
+
+    .bottom {
+      width: 100%;
+      height: calc(100% - 10%);
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+
+        .swiper-slide-item {
+          width: inherit;
+          height: inherit;
+          display: block;
+          align-content: center;
+          box-sizing: border-box;
+
+          .img-1 {
+            width: 120px;
+            height: 120px;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+          }
+          .clock {
+            width: 100%;
+            height: 30px;
+
+            display: flex;
+            flex-flow: row-reverse wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1px;
+            margin-bottom: 10px;
+            div {
+              width: fit-content;
+              height: 27px;
+              background-color: whitesmoke;
+              display: flex;
+              align-items: center;
+              padding: 0 5px;
+              border-radius: 5px;
+              box-shadow: 0 0 5px lightgrey;
+              font-family: var(--fontNumber);
+            }
+            .colon {
+              background-color: transparent !important;
+              box-shadow: none !important;
+              font-family: none;
+              color: whitesmoke;
+              font-size: 19px;
+              font-weight: 900;
+            }
+          }
+          .img-2 {
+            width: 145px;
+            height: 145px;
+            display: block;
+            margin: 10px auto;
+            margin-bottom: 10px;
+          }
+          .swiper-slide-item-link {
+            width: 100%;
+            a {
+              text-align: center;
+              font-family: var(--fontFamily);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-decoration: none;
+              color: whitesmoke;
+              font-size: 12px;
+              img {
+                width: 18px;
+                height: 18px;
+              }
+            }
+          }
+        }
+        .swiper-slide-item-product {
+          padding-top: 60px;
+          width: 100%;
+          height: inherit;
+          box-sizing: border-box;
+          .amazing-image {
+            width: 150px;
+            height: 150px;
+
+            display: block;
+            margin: 20px auto;
+          }
+          h6 {
+            font-family: var(--fontFamily);
+            font-size: 12px;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            line-height: 25px;
+            margin-bottom: 5px;
+            width: 80%;
+            margin: 0 auto;
+            color: #3f4064;
+            font-weight: 400;
+          }
+          .price {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-flow: row-reverse wrap;
+            font-family: var(--fontNumber);
+            .price-discount {
+              background-color: crimson;
+              border-radius: 12px;
+              padding: 0 10px;
+              color: whitesmoke;
+            }
+          }
+          .discount {
+            width: 83%;
+            text-decoration: line-through;
+            text-align: left;
+            font-family: var(--fontNumber);
+            color: rgba(128, 128, 128, 0.764);
+          }
+        }
+      }
+    }
+  }
+  .red-logo {
+    width: 123px;
+    height: 14px;
+    display: block;
+    box-sizing: border-box;
+    padding-right: 10px;
+  }
+}

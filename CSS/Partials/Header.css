@@ -36,6 +36,7 @@
       align-items: center;
       i {
         color: lightgrey;
+        padding-left: 10px;
       }
 
       [type="text"] {
@@ -107,11 +108,126 @@
       width: 70%;
       height: inherit;
       padding-right: 80px;
+
       nav {
         width: 100%;
         height: inherit;
         display: flex;
         flex-flow: row wrap;
+        box-sizing: border-box;
+
+        .menu-nav-item {
+          width: fit-content;
+          height: 100%;
+          display: block;
+          position: relative;
+
+          .menu-nav-submenu {
+            width: 70vw;
+            position: absolute;
+            height: 70vh !important;
+            background-color: #c4c0c0 !important;
+            z-index: 9999;
+            display: none;
+
+            .menu-nav-submenu-category {
+              width: 15%;
+              height: 100%;
+
+              display: flex;
+              flex-direction: column;
+              box-sizing: border-box;
+              overflow: auto;
+              direction: ltr;
+              .menu-nav-submenu-category-item {
+                width: 100%;
+                height: 40px;
+                box-sizing: border-box;
+                display: flex;
+
+                img {
+                  width: 18px;
+                  height: 18px;
+                }
+                .menu-nav-submenu-category-item-link {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  text-align: center;
+                  line-height: 40px;
+                  text-decoration: none;
+                  font-size: 12px;
+                  color: black;
+                  transition: 300ms;
+
+                  &:hover {
+                    background-color: lightgrey;
+                    color: crimson;
+                  }
+                }
+                .menu-nav-submenu-category-item-submenu {
+                  width: 85%;
+                  height: 100%;
+                  background-color: rgb(235, 234, 234);
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  display: none;
+                  padding: 20px 20px;
+                  box-sizing: border-box;
+                  h1 {
+                    text-align: right;
+                    font-size: 12px;
+                    color: aquamarine;
+                  }
+                  .submenu-bottom {
+                    width: 100%;
+                    height: 100%;
+
+                    box-sizing: border-box;
+                    overflow: hidden;
+                    display: flex;
+                    .bottom-items {
+                      width: 25%;
+                      height: inherit;
+
+                      display: flex;
+                      flex-direction: column;
+                      padding-top: 20px;
+                      gap: 25px;
+
+                      a {
+                        font-size: 14px;
+                        height: 38px;
+                        color: black;
+                        padding-left: 70px;
+                        &:hover {
+                          color: crimson;
+                        }
+                      }
+                      h3 {
+                        cursor: pointer;
+                        font-size: 12px;
+                        color: rgb(155, 153, 153);
+                        padding-left: 180px;
+                        &:hover {
+                          color: crimson;
+                        }
+                      }
+                    }
+                  }
+                }
+                &:hover .menu-nav-submenu-category-item-submenu {
+                  display: block;
+                }
+              }
+            }
+          }
+          &:hover .menu-nav-submenu {
+            display: block;
+          }
+        }
+
         div {
           width: fit-content;
           height: inherit;
@@ -147,7 +263,6 @@
       }
     }
     .left {
-      width: 30%;
       height: inherit;
     }
   }
@@ -156,4 +271,21 @@
   font-weight: bold !important;
   font-size: 14px !important;
   color: black !important;
+  &:hover {
+    background-color: #edeaea;
+  }
+  &:hover a {
+    color: crimson;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: lightgrey;
+}
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: grey;
+}
+.active {
+  display: block !important;
 }
